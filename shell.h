@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-
+#include <stddef.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <limits.h>
@@ -28,10 +28,10 @@
 #define USE_STRTOK 0
 
 /* STRING FUNCTION.C */
-int _strlen(char *);
-int _strcmp(char *, char *);
-char *starts_with(const char *, const char *);
-char *_strcat(char *, char *);
+int _strlen(char *s);
+int _strcmp(char *s1, char *s2);
+char *starts_with(const char haystack*, const char *seedle);
+char *_strcat(char *dest, char *src);
 char *_strcpy(char *, char *);
 char *_strdup(const char *);
 void _puts(char *);
@@ -39,6 +39,7 @@ int _putchar(char);
 char *_strncpy(char *, char *, int);
 char *_strncat(char *, char *, int);
 char *_strchr(char *, char);
-char **strtow)char *, char *);
+char **strtow(char *, char *);
 char **strtow2(char *, char);
+
 #endif /* PROJECT_SHELL_H */
