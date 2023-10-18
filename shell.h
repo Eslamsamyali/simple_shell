@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-
+#include <stddef.h>
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <limits.h>
@@ -41,4 +41,5 @@ char *_strncat(char *, char *, int);
 char *_strchr(char *, char);
 char **strtow(char *, char *);
 char **strtow2(char *, char);
+
 #endif /* PROJECT_SHELL_H */
