@@ -28,10 +28,10 @@
 #define USE_STRTOK 0
 
 /* STRING FUNCTION.C */
-int _strlen(char *s);
-int _strcmp(char *s1, char *s2);
-char *starts_with(const char haystack*, const char *seedle);
-char *_strcat(char *dest, char *src);
+int _strlen(char *);
+int _strcmp(char *, char *);
+char *starts_with(const char *, const char *);
+char *_strcat(char *, char *);
 char *_strcpy(char *, char *);
 char *_strdup(const char *);
 void _puts(char *);
